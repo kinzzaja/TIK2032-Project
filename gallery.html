@@ -4,18 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        header {
+            text-align: center;
+            padding: 50px;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #555;
+            font-style: italic;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+            justify-items: center;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-    <Header>
+    <header>
         <h1>Galeri Saya</h1>
-        <br></br>
         <h3>Berikut Beberapa foto saya</h3>
+    </header>
+
+    <div class="gallery">
         <img src="foto/foto1.jpg" alt="">
         <img src="foto/foto2.jpg" alt="">
         <img src="foto/foto3.jpg" alt="">
         <img src="foto/foto4.jpg" alt="">
         <img src="foto/foto5.jpg" alt="">
-    </Header>
-    
+    </div>
 </body>
 </html>
